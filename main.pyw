@@ -31,6 +31,10 @@ def recibir():
     global status
     return render_template('recibir.html', ipServer = ipServer, servidorEncendido = servidorEncendido, status = status, progre = progre)
 
+@app.route("/enviar")
+def enviar():  
+    return render_template('enviar.html')
+
 def receive_file_size(sck: socket.socket):
     # Esta función se asegura de que se reciban los bytes
     # que indican el tamaño del archivo que será enviado,
@@ -123,7 +127,9 @@ def cambiarStatus():
     socketio.emit("status",status)
     print(status)
 
-
+@socketio.on("newFile")
+def newFile(e):
+    print(e)
 
 if __name__ == '__main__':
     threadServidor = threading.Thread(target=encenderServer)
