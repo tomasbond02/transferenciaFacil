@@ -1,5 +1,6 @@
 # Byte-compiled / optimized / DLL files
 x.exe
+s.rar
 __pycache__/
 *.py[cod]
 *$py.class

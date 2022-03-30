@@ -11,7 +11,11 @@
     <title>Transferir archivos</title>
 </head>
 <body>
-    
+    <header style="background-color: rgb(10, 247, 255);">
+        <p>
+            <img src="{{url_for('static', filename='imgs/descarga.png')}}">
+        </p>
+    </header>
 <div style="padding-top:20px; margin-top: 30px;">
     <h1 style="text-align:center;">Enviar archivos</h1>
 </div>
@@ -41,6 +45,10 @@
 </div>
 
 <p id="status"> Status: {{ status }} </p>
+
+<!--<footer style="background-color: rgb(1, 161, 161); bottom: 0; position: absolute; width: 100%; height: 70px;">
+    <img src="{{url_for('static', filename='imgs/descarga.png')}}">
+</footer>-->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
